@@ -1,6 +1,6 @@
 #Import library for telegram bot
 import requests
-
+from pprint import pprint
 TOKEN = '5355192064:AAHeVCobTRAUsm0lsi9e_l_QZbfFMVuVFeM'
 
 #Send message 
@@ -32,6 +32,6 @@ send_message(text, chat_id)
 
 #Some URL photo of cat
 photo = 'https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2022/02/KOA_Nassau_2697x1517.jpg'
-
-dog=send_photo(chat_id, photo)
-print(dog)
+photo_id = 'AgACAgQAAxkDAAIBNmL7McRhkP0jHAABVtCI1iKIkJc2HwAC-a0xGxGwtFDrbbOKqZjxGgEAAwIAA3MAAykE'
+dog=send_photo(chat_id, photo_id)
+pprint(dog)
