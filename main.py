@@ -26,7 +26,8 @@ def send_keyboard(chat_id:int):
     }
     data = {
         'chat_id':chat_id,
-        'text':'TEST'
+        'text':'TEST',
+        'reply_markup':reply_markup
     }
 
     url = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
