@@ -39,3 +39,5 @@ def send_keyboard(chat_id:int):
 
 
 chat_id = '5575549228'
+
+send_keyboard(chat_id=chat_id)
